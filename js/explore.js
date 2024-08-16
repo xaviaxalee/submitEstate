@@ -302,7 +302,7 @@ function paginate(items, itemsPerPage, paginationContainer) {
   
           // Add click event listener for redirection
           boxTex.addEventListener('click', () => {
-              window.location.href = `details.html?item=${encodeURIComponent(item.title)}`;
+              window.location.href = `Details.html?item=${encodeURIComponent(item.title)}`;
           });
   
           menuContainer.appendChild(boxTex);
