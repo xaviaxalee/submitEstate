@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Summit Estate Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">listing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#About">about us</a></li>
+                    <li><a href="hotDeals.html">Hot Deals</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>        
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="carousel">
+            <div class="slides">
+                <!-- Clone the last slide at the beginning -->
+                <div class="slide" style="background-image: url('images/cover.png');">
+                    <div class="content">
+                        <h1>Over 1,000 Homes and counting...</h1>
+                        <p>Your dream home is finally here...</p>
+                        <a href="#" class="btn">Get to know us</a>
+                    </div>
+                </div>
+                <!-- Actual slides -->
+                <div class="slide" style="background-image: url('images/cover.png');">
+                    <div class="content">
+                        <h1>Over 2,000 Homes and counting...</h1>
+                        <p>Your dream home is finally here...</p>
+                        <a href="#" class="btn">Get to know us</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/cover.png');">
+                    <div class="content">
+                        <h1>Over 3,000 Homes and counting...</h1>
+                        <p>Your dream home is finally here...</p>
+                        <a href="#" class="btn">Get to know us</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/cover.png');">
+                    <div class="content">
+                        <h1>Over 4,000 Homes and counting...</h1>
+                        <p>Your dream home is finally here...</p>
+                        <a href="#" class="btn">Get to know us</a>
+                    </div>
+                </div>
+                <!-- Clone the first slide at the end -->
+                <div class="slide" style="background-image: url('images/cover.png');">
+                    <div class="content">
+                        <h1>Over 1,000 Homes and counting...</h1>
+                        <p>Your dream home is finally here...</p>
+                        <a href="#" class="btn">Get to know us</a>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1)">&#10095;</a>
+            <div class="navigation-radios d-flex align-items-center justify-content-center">
+                <span class="nav-radio"></span>
+                <span class="nav-radio"></span>
+                <span class="nav-radio"></span>
+                <span class="nav-radio"></span>
+            </div>
+            <span class="orange"></span>
+        </div>
+    </section>
+    
+
+    <section class="hot-deals d-flex justify-content-between align-items-center">
+        <div class="hot-text">
+            <h1>Hot Deals</h1>
+            <p>We are  the Best Estate Developers  in Abuja</p>
+            <a href="#">See More</a>
+        </div>
+        <div class="slideshow">
+            <div class="deals-slider">
+                <div class="swiper-container">
+                    <div class="orange-bar"></div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                      <!-- Cloned slides for continuous effect -->
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                    </div>
+                  </div>
+                  <button id="prevBtn">&#10094;</button>
+                  <button id="nextBtn">&#10095;</button>
+                </div>
+                <!-- Add more deals as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us d-flex justify-content-between align-items-center" id="About">
+        <div class="blue-bg d-flex align-items-center justify-content-center">
+            <div class="bglight d-flex align-items-center justify-content-center">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Summit Estates has presence in different states of the 
+                country, including high brow locations like 
+                Abuja, Lagos, Portharcourt etc. We are committed to making sure your dream home does not end at being a dream but a full blown reality! With over 1,000 homes built, we continue to deliver value.</p>
+                <p>At Summit Estates, we believe in delivering beyond your expectations. Our top-notch delivery is not just a claim but we have a high number of satisfied clients to verify this claim. We have land locations in different parts of the countries, with a good number of phases sold out and completed building projects. The responsibility for your satisfaction is ours to make sure!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="selling  my-4 container">
+        <div class="d-flex sell justify-content-between align-items-center">
+            <div class="property-image">
+                <img src="images/Frame 8.png" alt="">
+                <div class="orange-div"></div>
+    
+            </div>
+            <div class=" property-text px-2">
+                <h2>Selling</h2>
+                <p>What can you expect from us when selling your property:</p>
+                <ul>
+                    <li>Establishing the selling price</li>
+                    <li>Listing your house</li>
+                    <li>Marketing your property</li>
+                    <li>Negotiating offers</li>
+                    <!-- Add more list items as needed -->
+                </ul>
+                <a href="#" class="btn">List of Our Property</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center investment">
+            <div class="inverstment-text p-4">
+                <h2>INVESTMENT OPPORTUNITIES</h2>
+                <ul>
+                    <li>LAND BANKING AND PROPERTY  DEVELOPMENT.</li>
+                    <li>FLEXIBILITY IN TRANSACTION: BUY  AND SELL PLOTS AT YOUR OWN PACE.</li>
+                    <li>FINANCIAL ASSISTANCE: SUMMIT  OFFERS CREDIT OPTIONS AND  FACILITATES MORTGAGE  ARRANGEMENTS. </li>
+                    <li>SAFETY ASSURANCES: 100%  GUARANTEE ON LAND SAFETY.</li>
+                    <!-- Add more list items as needed -->
+                </ul>
+                <a href="#" class="btn">Get In Touch</a>
+                <div class="blue-bg"></div>
+            </div>
+            <div class="inverstment-image ">
+                <img src="images/Group 423.png" alt="" class="w-100">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="why-choose-us">
+        <img src="images/Group 33.png" alt="" class="w-100">
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h1 align="center">Meet Our Team</h1>
+            <div class="team-members align-items-center">
+                <div class="team-member">
+                    <div class="titel">
+                        <div class="round "></div>
+                        <h2>CEO Name</h2>    
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui beatae veritatis voluptatum quod officiis aut iure saepe dolore odit adipisci ipsam ipsa enim nam, consequuntur rem ab dolorem sint.</p>
+                    <a href="#">Read More ></a>
+                </div>
+                <div class="team-member">
+                    <div class="titel d-flex">
+                        <div class="round "></div>
+                        <h2>Bishop</h2>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui beatae veritatis voluptatum quod officiis aut iure saepe dolore odit adipisci ipsam ipsa enim nam, consequuntur rem ab dolorem sint.</p>
+                    <a href="#">Read More ></a>
+                </div>
+                <div class="team-member">
+                    <div class="titel d-flex">
+                        <div class="round "></div>
+                        <h2>Matt Murdock</h2>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui beatae veritatis voluptatum quod officiis aut iure saepe dolore odit adipisci ipsam ipsa enim nam, consequuntur rem ab dolorem sint.</p>
+                    <a href="#">Read More ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h1>Be the first to know about our new Projects</h1>
+            <p>Whether you want to rent out your property, want to sell or buy a property, at The Real Estate Company you are at the right address.</p>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content d-flex justify-content-between">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Summit Estate Logo" class="bg-light p-2">
+                    <p class="py-2">Suit f007, Israel plaza, Ademola Adetokunbo crescent, wuse ii, abuja</p>
+                </div>
+                <div class="footer-services">
+                    <ul>
+                        <h3>Service</h3>
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Interior design</a></li>
+                        <li><a href="#">Living</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="footer-posts">
+                    <ul>
+                        <h3>Our Post</h3>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Decline Notice</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="footer-connected">
+                    <ul>
+                        <h3>Connected</h3>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Tumblr</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="footer-help">
+                    <ul>
+                        <h3>Help Info</h3>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

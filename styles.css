@@ -1,0 +1,101 @@
+.box-menu {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+.box-menu .menu-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.box-menu img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box-menu .box-tex {
+    width: 80%;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(66, 66, 66, 0.589);
+    background-color: white;
+}
+.box-menu .box-tex span {
+    padding: 10px;
+    background-color: aquamarine;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.box-menu .box-tex h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+.box-menu .box-tex i {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.687);
+    margin-right: 10px;
+}
+.box-menu .box-tex p {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+.box-menu .box-tex .amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.box-menu .box-tex .amount p {
+    align-items: center;
+    font-weight: 800;
+    display: flex;
+}
+.box-menu .box-tex .amount i {
+    color: rgb(250, 185, 6);
+    font-size: 15px;
+}
+.box-menu .box-tex .amount h4 {
+    font-weight: 800;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pagination {
+    display: inline-flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-right: none;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease-in-out;
+}
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pagination a:last-child {
+    border-right: 1px solid #ddd;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.pagination a.active {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

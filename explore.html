@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/explore.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">listing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#About">about us</a></li>
+            <li><a href="#">hot deals</a></li>
+
+        </ul>
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+    </nav>
+
+
+<section class="main-bar">
+
+
+    <div class="search-container">
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'Sell')">Sell</button>
+            <button class="tablinks" onclick="openTab(event, 'Rent')">Rent</button>
+        </div>
+        <div class="search-form"><div class="input-group">
+            <label for="location">Location</label>
+            <select id="location">
+                <option value="">All</option>
+                <option value="gwarimpa abuja">Gwarimpa, Abuja</option>
+                <option value="maitama abuja">Maitama, Abuja</option>
+                <option value="wase abuja">Wase, Abuja</option>
+                <option value="central abuja">Central, Abuja</option>
+                <option value="utako abuja">Utako, Abuja</option>
+                <option value="jabi abuja">Jabi, Abuja</option>
+                <option value="asokoro abuja">Asokoro, Abuja</option>
+                <option value="kubwa abuja">Kubwa, Abuja</option>
+                <option value="garki abuja">Garki, Abuja</option>
+                <option value="wuse abuja">Wuse, Abuja</option>
+                <option value="abo lagoon">Abo Lagoon</option>
+                <option value="guarimpa abuja">Guarimpa, Abuja</option>
+                <option value="wuse 2 abuja">Wuse 2, Abuja</option>
+                <option value="kado abuja">Kado, Abuja</option>
+                <option value="abaji abuja">Abaji, Abuja</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="type">Type</label>
+            <select id="type">
+                <option value="">All</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
+                <option value="villa">Villa</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="range">Range</label>
+            <input type="text" id="range" placeholder="e.g., 100000000-300000000">
+        </div>
+        <div class="input-group">
+            <button id="search-button">Search <span class="search-icon">🔍</span></button>        </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="menu">
+    <div class="search-results d-flex justify-content-between ">
+        <div class="results-header">
+            <h3>Result For “<span id="location">South Gate</span>”</h3>
+            <p>Displaying 18 Results</p>
+        </div>
+            <div class="sort-options d-flex align-items-center">
+                <p>Sort By:
+                    <select id="sort-options">
+                        <option value="default">Sort by Default</option>
+                        <option value="location">Sort by Location</option>
+                        <option value="price">Sort by Price</option>
+                        <option value="type">Sort by Type</option>
+                    </select>
+                 </p>
+                 <div class="view-options d-flex align-items-center view-toggle">
+                    <img src="images/grid-view.png" id="list-view" alt="Grid View">
+                    <img src="images/list-view.png" id="grid-view" alt="List View">
+                </div>
+            </div>
+    </div>
+</section>
+
+
+<section class="box-menu">
+    <div id="menu" class="menu-1"></div>
+</section>
+<div id="menu" class="menu"></div>
+<div id="pagination" class="pagination"></div>
+
+
+<section class="hot-deals d-flex justify-content-between align-items-center">
+    <div class="hot-text">
+        <h1>Hot Deals</h1>
+        <p>We are  the Best Estate Developers  in Abuja</p>
+        <a href="#">See More</a>
+    </div>
+    <div class="slideshow">
+        <div class="deals-slider">
+            <div class="swiper-container">
+                <div class="orange-bar"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                  <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                  <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                  <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                  <!-- Cloned slides for continuous effect -->
+                  <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                  <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                </div>
+              </div>
+              <button id="prevBtn">&#10094;</button>
+              <button id="nextBtn">&#10095;</button>
+            </div>
+            <!-- Add more deals as needed -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content d-flex justify-content-between">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Summit Estate Logo" class="bg-light p-2">
+                <p class="py-2">Suit f007, Israel plaza, Ademola Adetokunbo crescent, wuse ii, abuja</p>
+            </div>
+            <div class="footer-services">
+                <ul>
+                    <h3>Service</h3>
+                    <li><a href="#">Apartments</a></li>
+                    <li><a href="#">Interior design</a></li>
+                    <li><a href="#">Living</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-posts">
+                <ul>
+                    <h3>Our Post</h3>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Decline Notice</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-connected">
+                <ul>
+                    <h3>Connected</h3>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Tumblr</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-help">
+                <ul>
+                    <h3>Help Info</h3>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="./js/explore.js"></script>
+</body>
+</html>

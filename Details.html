@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/Details.css">
+</head>
+<body>
+  <nav class="navbar px-4">
+    <div class="logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#About">about us</a></li>
+        <li><a href="hotDeals.html">hot deals</a></li>
+
+    </ul>
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+</nav>
+<div class="property-header m-4 ">
+  <h1>Guzape Terrached Duplex</h1>
+  <p>
+      <i class="fa-solid fa-location-dot location-icon"></i>
+      <span>Guzape Abuja</span>
+  </p>
+</div>
+  <section class="w-100">
+    <div class="home-image">
+      <img src="./images/details.png" alt="" class="w-100">
+    </div>
+    <div class="related-image container d-flex justify-content-between">
+      <img src="./images/house(1).png" alt="">
+      <img src="./images/house(2).png" alt="">
+      <img src="./images/house(3).png" alt="">
+      <img src="./images/house(4).png" alt="">
+
+    </div>
+  </section>
+
+    <section class="my-2">
+        <div class="d-flex describ">
+          <div class="main-content">
+            <div class="description">
+              <h2>Description</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim voluptas quasi dolorem, libero aperiam placeat assumenda accusantium laudantium eaque, autem magni blanditiis cumque commodi! Corporis facere dolores animi ad.</p>
+            </div>
+            <div class="overview">
+              <h2>Overview</h2>
+              <div class="overview-icons">
+                <div class="overview-icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <p>4 Bedrooms</p>
+                </div>
+                <div class="overview-icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <p>3 Bathrooms</p>
+                </div>
+                <div class="overview-icon">
+                  <i class="fa-solid fa-car"></i>
+                  <p>1 Garage</p>
+                </div>
+                <div class="overview-icon">
+                  <i class="fa-solid fa-ruler-combined"></i>
+                  <p>3,000 Sqft</p>
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <h2>Details</h2>
+              <div class="property-details w-100 d-flex justify-content-between">
+                <ul>
+                  <li>Property ID</li>
+                  <li>Price</li>
+                  <li>Property Size</li>
+                  <li>Bedroom</li>
+                  <li>Bathroom</li>
+                </ul>
+                <ul>
+                  <li>AGS1234</li>
+                  <li>$ 250,000</li>
+                  <li>3000 Sqft</li>
+                  <li>4</li>
+                  <li>3</li>
+                </ul>
+                
+                  <ul>
+                    <li>Garage</li>
+                    <li>Garage Size</li>
+                    <li>Year Built</li>
+                    <li>Category</li>
+                    <li>Property Status</li>
+                  </ul>
+                  <ul>
+                    <li>1</li>
+                    <li>200sqt</li>
+                    <li>2001</li>
+                    <li>House</li>
+                    <li>Sale</li>
+                  </ul>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <h2>I Want This Property</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Full Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date">
+              </div>
+              <button type="submit" class="cta-button">Reserve</button>
+            </form>
+            <p>Certain reservations may also require a security deposit.</p>
+          </div>
+        </div>
+    </section>
+    <h2 class="container">Address</h2>
+    <section id="control" >
+        <div class="address-container d-flex justify-content-between">
+          <ul>
+           <li> Address</li>
+           <li>City</li>
+           <li>State/Province</li>
+          </ul>
+         <ul>
+           <li>8819 Ohio St.</li>
+           <li>South Gate</li>
+           <li>California</li>
+         </ul>
+           <ul>
+           <li>Zip/Postal Code</li>
+           <li>Area</li>
+           <li>Country</li>
+           </ul>
+      
+           <ul>
+               <li>90280</li>
+               <li>Central City</li>
+               <li>US</li>
+           </ul>
+        </div>
+        </div>
+    </div>
+      </section>
+
+    <section id="forms" class="d-flex algin-items-center my-4 container">
+
+        <div class="calculator">
+          <h2>Payment Calculator</h2>
+          <form id="paymentForm">
+              <div class="form-groups">
+                  <label for="taxYears">Tax Years</label>
+                  <i class="fas fa-dollar-sign"></i>
+                  <input type="number" id="taxYears" placeholder="$446" value="446">
+              </div>
+              <div class="form-groups">
+                  <label for="homeInsurance">Home Insurance</label>
+                  <i class="fas fa-dollar-sign"></i>
+                  <input type="number" id="homeInsurance" placeholder="$275" value="">
+              </div>
+              <div class="form-groups">
+                  <label for="downPayment">Down Payment</label>
+                  <i class="fas fa-dollar-sign"></i>
+                  <input type="number" id="downPayment" placeholder="$106" value="">
+              </div>
+              <div class="form-groups">
+                  <label for="totalPayment">Total Payment</label>
+                  <i class="fas fa-dollar-sign"></i>
+                  <input type="number" id="totalPayment" placeholder="$779" value="">
+              </div>
+              <button type="button" class="calculate-button" onclick="calculatePayment()">
+                 Calculate
+              </button>
+          </form>
+      </div>
+      <div class="chart-container">
+        <canvas id="myDonutChart" width="352" height="290" style="display: block; box-sizing: border-box; height: 290px; width: 352px;"></canvas>
+        <div class="chart-text">
+            <div>$8,264.91</div>
+            <div class="yearly">Yearly</div>
+        </div>
+    </div>
+    </section>
+    <h2 class="mx-4 px-4">Contact Information</h2>
+    <section class="mx-4">
+        <div class="contact-info">
+          <div class="left-section">
+            <div class="profile-pic"></div>
+            <div class="contact-details">
+              <h2>Grand House Real Estate</h2>
+              <div class="contact-methods">
+                <div class="contact-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+90 8989787 898</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span>+90 8989787 898</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-section">
+            <button class="call-agency-btn">Call Agency</button>
+          </div>
+        </div>
+      </section>
+      <section class="my-4 px-4">
+        <div>
+        <div class="newest-listings">
+            <h2>Newest Listings</h2>
+          <button class="view-all-btn">View All</button>
+        </div>
+        <div class="listings">
+          <div class="listing-card">
+            <div class="listing-image"></div>
+            <h3>Grand Family House</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Ohio St. South Gate, California</p>
+            <div class="rating">
+              <p class="price">$350</p>
+              <p> <i class="fas fa-star"></i> 4.8</p>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="listing-image"></div>
+            <h3>The Elements</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Jakarta Selatan, DKI Jakarta</p>
+            <div class="rating">
+              <p class="price">$620</p>
+              <p> <i class="fas fa-star"></i> 4.8</p>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="listing-image"></div>
+            <h3>Triraksa Village 2</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Tangerang, Banten</p>
+            <div class="rating">
+              <p class="price">$682</p>
+              <p> <i class="fas fa-star"></i> 4.8</p>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="listing-image"></div>
+            <h3>Nuvasa Bay</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Batam, Kepulauan Riau</p>
+            <div class="rating">
+              <p class="price">$969</p>
+              <p> <i class="fas fa-star"></i> 4.8</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="px-4">
+        <div class="footer-content d-flex justify-content-between">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Summit Estate Logo" class="bg-light p-2">
+                <p class="py-2">Suit f007, Israel plaza, Ademola Adetokunbo crescent, wuse ii, abuja</p>
+            </div>
+            <div class="footer-services">
+                <ul>
+                    <h3>Service</h3>
+                    <li><a href="#">Apartments</a></li>
+                    <li><a href="#">Interior design</a></li>
+                    <li><a href="#">Living</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-posts">
+                <ul>
+                    <h3>Our Post</h3>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Decline Notice</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-connected">
+                <ul>
+                    <h3>Connected</h3>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Tumblr</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="footer-help">
+                <ul>
+                    <h3>Help Info</h3>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright All rights reserved</p>
+        </div>
+    </div>
+</footer>
+      <script src="./js/details.js"></script>
+</body>
+</html>

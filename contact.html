@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">listing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#About">about us</a></li>
+            <li><a href="hotDeals.html">hot deals</a></li>
+
+        </ul>
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+    </nav>
+
+
+<section class="about">
+    <h1>Contact Us Today</h1>
+</section>
+
+
+    <div class="form-container">
+        <form id="sampleForm">
+            <div class="form-input">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="add listing title" required>
+    
+            </div>            
+            <div class="form-input">
+                <label for="feedback">address</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="add description..."></textarea>
+            </div>
+            <div class="form-input">
+                <p id="message"></p>
+                <label for="gender">how can we assist you:</label>
+                <select id="gender" name="category" required>
+                    <option value="house">Select property category</option>
+                    <option value="house">wase abuja</option>
+                    <option value="house">maitama abuja</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-input">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-input">
+                <label for="password">phone number:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-input">
+                <label for="status">Property Status</label>
+                <select id="status" name="category" required onchange="updateDotColor()">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Deactivated">Deactivated</option>
+                </select>
+                <div id="status-dot" class="green"></div>            
+            </div>
+            <div class="form-input">
+                <button type="email">send us a email</button>
+            </div>
+        </form>
+        <div id="formResult"></div>
+    </div>
+
+    <section class="hot-deals d-flex justify-content-between align-items-center">
+        <div class="hot-text">
+            <h1>Hot Deals</h1>
+            <p>We are  the Best Estate Developers  in Abuja</p>
+            <a href="#">See More</a>
+        </div>
+        <div class="slideshow">
+            <div class="deals-slider">
+                <div class="swiper-container">
+                    <div class="orange-bar"></div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                      <!-- Cloned slides for continuous effect -->
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 1 (1).png" alt="Image 1"></div>
+                      <div class="swiper-slide"><img src="images/WhatsApp Image 2024-05-13 at 11.38 3.png" alt="Image 2"></div>
+                    </div>
+                  </div>
+                  <button id="prevBtn">&#10094;</button>
+                  <button id="nextBtn">&#10095;</button>
+                </div>
+                <!-- Add more deals as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content d-flex justify-content-between">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Summit Estate Logo" class="bg-light p-2">
+                    <p class="py-2">Suit f007, Israel plaza, Ademola Adetokunbo crescent, wuse ii, abuja</p>
+                </div>
+                <div class="footer-services">
+                    <ul>
+                        <h3>Service</h3>
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Interior design</a></li>
+                        <li><a href="#">Living</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="footer-posts">
+                    <ul>
+                        <h3>Our Post</h3>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Decline Notice</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="footer-connected">
+                    <ul>
+                        <h3>Connected</h3>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Tumblr</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="footer-help">
+                    <ul>
+                        <h3>Help Info</h3>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script >
+        
+    </script>
+    <script src="./js/contact.js"></script>
+</body>
+</html>
